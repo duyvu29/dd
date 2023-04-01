@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.MainActivity">
+
+    <Spinner
+        android:id="@+id/SpinnerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RadioButton
+
+        android:id="@+id/RadioSingle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Single file"
+        android:textColor="@color/black" />
+
+    <RadioButton
+        android:id="@+id/RadioMutiple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All file"
+        android:textColor="@color/black" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edtDesc"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="@drawable/shape_edit" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDownload"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shape_edit"
+        android:text="Download" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSave"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_edit"
+        android:text="Save" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="10dp" />
+
+
+</LinearLayout>
